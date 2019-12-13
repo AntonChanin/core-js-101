@@ -32,7 +32,7 @@
  * @return {RegExp}
  */
 function getRegexForGuid() {
-  throw new Error('Not implemented');
+  return RegExp(/{[^g-zG-Z]{8}-[^g-zG-Z]{4}-[^g-zG-Z]{4}-[^g-zG-Z]{4}-[^g-zG-Z]{12}}/);
 }
 
 
@@ -54,9 +54,8 @@ function getRegexForGuid() {
  *
  */
 function getRegexForPitSpot() {
-  throw new Error('Not implemented');
+  return RegExp(/pit|sp*|re*e/);
 }
-
 
 /**
  * Returns the password validator regex.
